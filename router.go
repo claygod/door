@@ -31,7 +31,7 @@ func (r *Router) Add(url string, handler func(*fasthttp.RequestCtx)) *route {
 	}
 }
 
-// StartFast - start the server indicating the listening port
+// Start - start the server indicating the listening port
 func (r *Router) Start(port string) {
 	r.index = newIndex()
 	r.index.compile(r.routes)
